@@ -21,7 +21,7 @@ forgejo:
     config:
       storage:
         STORAGE_TYPE: "minio"
-        MINIO_ENDPOINT: "192.168.99.118:9000"
+        MINIO_ENDPOINT: "minio.minio.svc.cluster.local:9000"
         MINIO_ACCESS_KEY_ID: "minioadmin"
         MINIO_SECRET_ACCESS_KEY: "minio123"
         MINIO_BUCKET: "forgejo"
