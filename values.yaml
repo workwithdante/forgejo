@@ -1,6 +1,9 @@
 forgejo:
   replicaCount: 1
-
+  image:
+    registry: code.forgejo.org
+    repository: forgejo/forgejo
+    tag: 1.20.2-0
   nodeSelector:
     kubernetes.io/hostname: "master"
 
