@@ -24,6 +24,6 @@ forgejo:
         MINIO_ENDPOINT: "192.168.99.118:9000"
         MINIO_ACCESS_KEY_ID: "minioadmin"
         MINIO_SECRET_ACCESS_KEY: "minio123"
-        MINIO_BUCKET: "forgejo_2"
+        MINIO_BUCKET: "forgejo"
         MINIO_LOCATION: "us-east-1"
         MINIO_USE_SSL: false
