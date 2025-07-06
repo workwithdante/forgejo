@@ -7,4 +7,4 @@ version: 0.1.0
 dependencies:
   - name: forgejo
     version: "1.0.0"  # Especifica la versión del chart de Forgejo que deseas usar
-    repository: "https://artifacthub.io/packages/helm/forgejo-helm/forgejo"  # URL del repositorio de Forgejo
+    repository: "oci://code.forgejo.org/forgejo-helm/forgejo"  # URL del repositorio de Forgejo
