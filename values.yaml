@@ -1,0 +1,7 @@
+forgejo:
+  replicaCount: 1
+  image:
+    repository: codeberg.org/forgejo/forgejo
+    tag: "1.0.0"
+  nodeSelector:
+    kubernetes.io/hostname: "master"  # Personaliza el nodeSelector si es necesario
