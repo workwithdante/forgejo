@@ -13,3 +13,17 @@ forgejo:
       - secretName: tls-cert  # Certificado TLS para la conexión segura
         hosts:
           - forgejo.mabecenter.org
+
+  gitea:
+    admin:
+      existingSecret: gitea-admin-secret
+
+    config:
+      storage:
+        STORAGE_TYPE: "minio"
+        MINIO_ENDPOINT: "192.168.99.118:9000"
+        MINIO_ACCESS_KEY_ID: "minioadmin"
+        MINIO_SECRET_ACCESS_KEY: "minio123"
+        MINIO_BUCKET: "forgejo_2"
+        MINIO_LOCATION: "us-east-1"
+        MINIO_USE_SSL: false
