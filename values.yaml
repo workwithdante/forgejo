@@ -1,8 +1,4 @@
 forgejo:
-  replicaCount: 1
-  nodeSelector:
-    kubernetes.io/hostname: "master"
-
   ingress:
     enabled: true
     ingressClassName: "traefik"  # Usar Traefik como controlador de Ingress
@@ -20,6 +16,4 @@ forgejo:
 
   gitea:
     admin:
-      username: 'workwithdante'
-      password: 'Nunc40lv1d4r'
-      email: 'dantedevenir@outlook.com'
+      existingSecret: gitea-admin-secret
