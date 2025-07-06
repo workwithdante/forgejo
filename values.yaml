@@ -15,7 +15,7 @@ forgejo:
           - forgejo.mabecenter.org
   
   postgresql:
-  enabled: true
+    enabled: true
 
   gitea:
     admin:
