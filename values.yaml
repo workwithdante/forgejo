@@ -13,6 +13,9 @@ forgejo:
       - secretName: tls-cert  # Certificado TLS para la conexión segura
         hosts:
           - forgejo.mabecenter.org
+  
+  postgresql:
+  enabled: true
 
   gitea:
     admin:
