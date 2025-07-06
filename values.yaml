@@ -14,9 +14,6 @@ forgejo:
         hosts:
           - forgejo.mabecenter.org
   
-  postgresql:
-    enabled: true
-
   gitea:
     admin:
       existingSecret: gitea-admin-secret
