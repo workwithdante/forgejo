@@ -1,6 +1,7 @@
 forgejo-runner:
   runner:
     config:
+      create: true
       instance: https://forgejo.mabecenter.org
       name: runner-mabecenter
       token: 4vZ3A2crppFOrifs5ifeYkpV9fWgqOSPKuSJEXi2
