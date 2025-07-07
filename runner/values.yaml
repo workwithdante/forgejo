@@ -14,11 +14,6 @@ forgejo:
         hosts:
           - forgejo.mabecenter.org
   
-  actions:
-      enabled: true
-      provisioning:
-        enabled: true
-        
   gitea:
     admin:
       existingSecret: gitea-admin-secret
