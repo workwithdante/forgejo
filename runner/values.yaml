@@ -4,7 +4,7 @@ forgejo-runner:
       create: true
       instance: https://forgejo.mabecenter.org
       name: runner-mabecenter
-      token: 4vZ3A2crppFOrifs5ifeYkpV9fWgqOSPKuSJEXi2
+      token: vQqKi6TdDIREAnQlkRw8h4einrrR5Py9z8zmqkDb
       file:
         log:
           level: "info"
