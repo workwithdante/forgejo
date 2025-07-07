@@ -5,3 +5,6 @@ forgejo-runner:
       instance: https://forgejo.mabecenter.org
       name: runner-mabecenter
       token: vQqKi6TdDIREAnQlkRw8h4einrrR5Py9z8zmqkDb
+      file:
+        runner:
+          file: ".runner"
