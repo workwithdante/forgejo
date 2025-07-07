@@ -13,11 +13,6 @@ forgejo:
       - secretName: tls-cert  # Certificado TLS para la conexión segura
         hosts:
           - forgejo.mabecenter.org
-  
-  actions:
-      enabled: true
-      provisioning:
-        enabled: true
         
   gitea:
     admin:
@@ -32,3 +27,6 @@ forgejo:
         MINIO_BUCKET: "forgejo"
         MINIO_LOCATION: "us-east-1"
         MINIO_USE_SSL: false
+
+      actions:
+        enabled: true

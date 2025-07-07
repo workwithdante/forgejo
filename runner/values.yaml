@@ -1,29 +1,6 @@
-forgejo:
-  ingress:
-    enabled: true
-    ingressClassName: "traefik"  # Usar Traefik como controlador de Ingress
-    annotations:
-      kubernetes.io/ingress.class: "traefik"
-    hosts:
-      - host: forgejo.mabecenter.org  # El dominio donde se accederá a Forgejo
-        paths:
-          - path: /
-            pathType: Prefix
-    tls:
-      - secretName: tls-cert  # Certificado TLS para la conexión segura
-        hosts:
-          - forgejo.mabecenter.org
-  
-  gitea:
-    admin:
-      existingSecret: gitea-admin-secret
-
+forgejo-runner:
+  runner:
     config:
-      storage:
-        STORAGE_TYPE: "minio"
-        MINIO_ENDPOINT: "minio.minio.svc.cluster.local:9000"
-        MINIO_ACCESS_KEY_ID: "minioadmin"
-        MINIO_SECRET_ACCESS_KEY: "minio123"
-        MINIO_BUCKET: "forgejo"
-        MINIO_LOCATION: "us-east-1"
-        MINIO_USE_SSL: false
+      instance: https://forgejo.mabecenter.org
+      name: runner-mabecenter
+      token: 4vZ3A2crppFOrifs5ifeYkpV9fWgqOSPKuSJEXi2

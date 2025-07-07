@@ -1,10 +1,10 @@
 apiVersion: v2
-name: forgejo-sierra-group
-description: Wrapper chart for Forgejo
+name: forgejo-runner-sierra-group
+description: Wrapper chart for Forgejo Runner
 type: application
 version: 0.1.0
 
 dependencies:
-  - name: forgejo
-    version: "12.5.3"  # Especifica la versión del chart de Forgejo que deseas usar
-    repository: "oci://code.forgejo.org/forgejo-helm"  # URL del repositorio de Forgejo
+  - name: forgejo-runner
+    version: "0.4.34"  # Especifica la versión del chart de Forgejo que deseas usar
+    repository: "oci://codeberg.org/wrenix/helm-charts"  # URL del repositorio de Forgejo
